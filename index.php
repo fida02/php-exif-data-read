@@ -1,5 +1,9 @@
 <?php
-// Php exif data extraction function
+/*
+|---------------------------------------------------------|
+| EXIF DATA EXTRACTION FUNCTION                           |
+|---------------------------------------------------------|
+*/
 function fidaExif() {
   global $imagePath;
 
@@ -117,4 +121,30 @@ function fidaExif() {
   $return['flash'] = $camFlashName;
   return $return;
 }
- ?>
+
+/*
+|---------------------------------------------------------|
+| USE                                                     |
+|---------------------------------------------------------|
+*/
+
+// Full URL of the image to read exif data
+$imagePath = 'FULL_IMAGE_PATH'; // Chnage FULL_IMAGE_PATH with your image URL
+
+// Run the function
+$camera = fidaExif();
+
+// Show the exif data
+echo '<ul>';
+  echo '<li>Camera Brand: '. $camera['make'] .'</li>';
+  echo '<li>Camera Model: '. $camera['model'] .'</li>';
+  echo '<li>Lens: '. $camera['lens'] .'</li>';
+  echo '<li>Aperture: '. $camera['aperture'] .'</li>';
+  echo '<li>Shutter Speed: '. $camera['shutter'] .'</li>';
+  echo '<li>ISO: '. $camera['iso'] .'</li>';
+  echo '<li>Focal Length: '. $camera['focal'] .'</li>';
+  echo '<li>35mm Focal Length: '. $camera['35mmfocal'] .'</li>';
+  echo '<li>Metering Mode: '. $camera['meteringmode'] .'</li>';
+  echo '<li>Flash Mode: '. $camera['flash'] .'</li>';
+echo '</ul>';
+?>
