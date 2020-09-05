@@ -14,5 +14,4 @@ Using this php code anyone can easily read and show 10 types of exif data of a i
 - Metering Mode
 
 # How to use
-Copy the full code where you want to show. Then change FULL_IMAGE_PATH from this line $imagePath = 'FULL_IMAGE_PATH';
-Enjoy!
+Copy the full code where you want to show. Then follow the comment in the code.
