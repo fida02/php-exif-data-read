@@ -1,11 +1,10 @@
 // Php exif data extraction
 function cameraUsed() {
-global $imagePath;
+  global $imagePath;
 
-$exif_ifd0 = read_exif_data($imagePath ,'IFD0' ,0);      
-$exif_exif = read_exif_data($imagePath ,'EXIF' ,0);
-     
-$notFound = "Unavailable";
+  $exif_ifd0 = read_exif_data($imagePath ,'IFD0' ,0);      
+  $exif_exif = read_exif_data($imagePath ,'EXIF' ,0);    
+  $notFound = "Unavailable";
      
       // Make
       if (@array_key_exists('Make', $exif_ifd0)) {
