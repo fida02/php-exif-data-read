@@ -1,5 +1,13 @@
 <?php
 /*
+*
+* Author: Fida Al Hasan
+* https://github.com/fida02/php-exif-data-read
+* License: MIT
+*
+*/
+
+/*
 |---------------------------------------------------------|
 | EXIF DATA EXTRACTION FUNCTION                           |
 |---------------------------------------------------------|
