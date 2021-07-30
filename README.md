@@ -1,7 +1,7 @@
 # php-exif-data-read
-Using this php code anyone can easily read and show 10 types of exif data of a image
+Using this php code anyone can easily read and show 10 types of exif data of an image
 
-## Avialable exif data
+## Available EXIF data
 - Camera Brand
 - Camera Model
 - Lens
@@ -11,7 +11,7 @@ Using this php code anyone can easily read and show 10 types of exif data of a i
 - Focal Length
 - 35mm Focal Length
 - Metering Mode
-- Metering Mode
+- Flash Mode
 
 ## How to use
 Copy the full code where you want to show. Then follow the comment in the code.
