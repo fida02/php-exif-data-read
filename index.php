@@ -15,8 +15,8 @@
 function fidaExif() {
   global $imagePath;
 
-  $exif_ifd0 = read_exif_data($imagePath ,'IFD0' ,0);      
-  $exif_exif = read_exif_data($imagePath ,'EXIF' ,0);    
+  $exif_ifd0 = exif_read_data($imagePath ,'IFD0' ,0);      
+  $exif_exif = exif_read_data($imagePath ,'EXIF' ,0);    
   $notFound = "Unavailable";
      
     // Make
